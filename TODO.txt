@@ -1,0 +1,6 @@
+- Add patterns in the check batch emailed to Ben 7/13/20
+- Add the rewritten patterns for 2D code emailed earlier
+- Make the edits suggested in Ben's 7/19/20 feedback on the initial batch 
+- Check and remove 2nd version of rainbow fonts
+- Nominate some community patterns for inclusion, including zranger and ChrisNZ, the 2D/3D mapper test patterns, Ben's PRNG in static random colors, xorcery, lightning, and others on the pattern library either upvoted or judged unique
+- Update and lightly comment the rest of the default patterns, especiall the PI Sound patterns
