@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------------------
+/*
   Welcome to Pixelblaze!
 
   Let's get you started with the Pixelblaze language. If you're an experienced 
@@ -52,8 +52,9 @@ export function render(index) {
   Great! From here on out, we're going to keep learning by commenting out
   entre examples and 'uncommenting' the next example. 
 
-  This code editor is called ACE and it has some useful shortcuts you can look
-  up online. One is that you can select multiple lines and comment or uncomment
+  This code editor is called ACE and it has some useful shortcuts you can find
+  here: https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts
+  One is that you can select multiple lines and comment or uncomment
   them all at once with "Ctrl-/" (Win) or "Cmnd-/" (Mac). 
   
   Try uncommenting the entire next example.
@@ -345,7 +346,7 @@ export function render(index) {
 //   onPixel = floor(t1 * pixelCount) 
 //
 //   v = 0 // Start by asuming the pixel is off
-//   // v is going to be 1 only if the current pixel's index is equal to `onPixel`
+//   // Turn it on only if the current pixel's index is equal to `onPixel`
 //   if (index == onPixel) v = 1
 //   hsv(0.02, 1, v)
 // }
