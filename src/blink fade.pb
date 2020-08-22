@@ -23,12 +23,6 @@
   preview how the pixels in the center seem to originate new colors and that
   those colors propogate to the edges.
   
-  If you've used arrays in other languages, you should know: To keep things
-  fast, there's no garbage collection. That means arrays are statically sized, 
-  and elements must be set by `arr[i] = x` -- you can't set values with array 
-  literals like `arr = [1, 1, 2, 3]`. Since there are no objects, there is no
-  `arr.push(x)` or `arr.length`. You can, however, allocate arrays at runtime.
-  
   An array element can be a function instead of a value. Check out the
   "Example: Modes and Waveforms" pattern to see that technique in action.
   
