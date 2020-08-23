@@ -1,12 +1,22 @@
 - Add patterns in the check batch emailed to Ben 7/13/20 (done)
+
 - Add the rewritten patterns for 2D code emailed earlier
+  - matrix 2D pulse (done)
+  - Did I also do honeycomb at some point? need to find.
+
 - Make the edits suggested in Ben's 7/19/20 feedback on the initial batch
   - blink fade array note (done)
+  
   - modes and waveforms: "I think that using an hsv picker for hue and a slider for saturation is kind of a UX weirdness. Demoing controls might be better done elsewhere, but I can see some value in merging an hsv picker with the demo textures."
+
   - An intro: "Keyboard shortcuts url
       https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts" (done)
+
   - +firework rocket sparks
     "Dejavu! I just had to reverse engineer this on a tutoring session a few weeks ago and I think you nailed it better than I could! You have a bunch of enhancements written up, I'd say go for that, rewrite and simplify. No need to carry forward the obscure and buggy version. BTW many of these were written in v1 - when there was no if/else, so multiplying booleans was the way to go."
+
 - Check and remove 2nd version of rainbow fonts
+
 - Update and lightly comment the rest of the default patterns, especially the PI Sound patterns
+
 - (Ben could do this too) - Select some community patterns for inclusion, including zranger and ChrisNZ, Roger Chang's 2D/3D mapper test patterns, Ben's PRNG in static random colors, xorcery,  lightning, and others on the pattern library either upvoted or judged unique
