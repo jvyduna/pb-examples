@@ -6,7 +6,7 @@
 
 - Make the edits suggested in Ben's 7/19/20 feedback on the initial batch
   - blink fade array note (done)
-  
+
   - modes and waveforms: "I think that using an hsv picker for hue and a slider for saturation is kind of a UX weirdness. Demoing controls might be better done elsewhere, but I can see some value in merging an hsv picker with the demo textures."
 
   - An intro: "Keyboard shortcuts url
@@ -15,7 +15,10 @@
   - +firework rocket sparks
     "Dejavu! I just had to reverse engineer this on a tutoring session a few weeks ago and I think you nailed it better than I could! You have a bunch of enhancements written up, I'd say go for that, rewrite and simplify. No need to carry forward the obscure and buggy version. BTW many of these were written in v1 - when there was no if/else, so multiplying booleans was the way to go."
 
-- Check and remove 2nd version of rainbow fonts
+- Check and remove 2nd version of rainbow fonts (done. Picked the version I 
+thought was clearer. Previous versions had v set to 0.2, which quite muted the
+preview image. If this was intentional because its intensity dominates the
+pattern list, please but it back in.)
 
 - Update and lightly comment the rest of the default patterns, especially the PI Sound patterns
 
