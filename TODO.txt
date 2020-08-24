@@ -2,7 +2,7 @@
 
 - Add the rewritten patterns for 2D code emailed earlier
   - matrix 2D pulse (done)
-  - Did I also do honeycomb at some point? need to find.
+  - matrix 2D honeycomb (done)
 
 - Make the edits suggested in Ben's 7/19/20 feedback on the initial batch
   - blink fade array note (done)
