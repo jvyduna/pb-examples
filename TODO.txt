@@ -1,3 +1,13 @@
+TODO
+
+- Update and lightly comment the rest of the default patterns, especially the PI Sound patterns
+
+- (Ben could do this too) - Select some community patterns for inclusion, including zranger and ChrisNZ, Roger Chang's 2D/3D mapper test patterns, Ben's PRNG in static random colors, xorcery,  lightning, and others on the pattern library either upvoted or judged unique
+
+
+
+DONE / NOTES
+
 - Add patterns in the check batch emailed to Ben 7/13/20 (done)
 
 - Add the rewritten patterns for 2D code emailed earlier
@@ -12,14 +22,9 @@
   - An intro: "Keyboard shortcuts url
       https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts" (done)
 
-  - +firework rocket sparks
-    "Dejavu! I just had to reverse engineer this on a tutoring session a few weeks ago and I think you nailed it better than I could! You have a bunch of enhancements written up, I'd say go for that, rewrite and simplify. No need to carry forward the obscure and buggy version. BTW many of these were written in v1 - when there was no if/else, so multiplying booleans was the way to go."
+  - firework rocket sparks (done)
 
 - Check and remove 2nd version of rainbow fonts (done. Picked the version I 
 thought was clearer. Previous versions had v set to 0.2, which quite muted the
 preview image. If this was intentional because its intensity dominates the
 pattern list, please but it back in.)
-
-- Update and lightly comment the rest of the default patterns, especially the PI Sound patterns
-
-- (Ben could do this too) - Select some community patterns for inclusion, including zranger and ChrisNZ, Roger Chang's 2D/3D mapper test patterns, Ben's PRNG in static random colors, xorcery,  lightning, and others on the pattern library either upvoted or judged unique
