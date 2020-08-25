@@ -2,7 +2,7 @@ TODO
 
 - Update and lightly comment the rest of the default patterns, especially the PI Sound patterns
   - block reflections (done, explores remainder / modulus)
-  - color bands
+  - color bands (done, good example of intermittent white)
   - color fade pulse
   - color twinkle bounce
   - fast pulse (use a design-first approach like KITT)
