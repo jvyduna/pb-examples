@@ -6,7 +6,7 @@ TODO
   - color fade pulse (done)
   - color twinkle bounce (done)
   - color twinkles (done)
-  - fast pulse (use a design-first approach like KITT)
+  - fast pulse (done)
   - firework dust (explain random)
   - gitch bands
   - green ripple reflections

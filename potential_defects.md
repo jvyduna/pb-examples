@@ -8,3 +8,5 @@
     
     Can't repro ever since saving a valid map then clearing the map textfield and saving again.
 
+2. Upon editing a patern (via copy-paste from text files, if that matters), I was able to get the Fast pulse pattenr to somehow generate an invalid preview that would hanf the main pattern page upon loading that preview image. Video: https://youtu.be/O9wP7jfQyCE
+
