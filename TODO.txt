@@ -4,7 +4,7 @@ TODO
   - block reflections (done, explores remainder / modulus)
   - color bands (done, good example of intermittent white)
   - color fade pulse (done)
-  - color twinkle bounce
+  - color twinkle bounce (done)
   - fast pulse (use a design-first approach like KITT)
   - firework dust (explain random)
   - gitch bands
