@@ -10,7 +10,7 @@ TODO
   - firework dust (done. explains random())
   - gitch bands (done. So cool.)
   - green ripple reflections (done)
-  - marching rainbow
+  - marching rainbow (done)
   - mllipede
   - opposites
   - ranbow melt
