@@ -9,7 +9,7 @@ TODO
   - fast pulse (done)
   - firework dust (done. explains random())
   - gitch bands (done. So cool.)
-  - green ripple reflections
+  - green ripple reflections (done)
   - marching rainbow
   - mllipede
   - opposites
