@@ -7,7 +7,7 @@ TODO
   - color twinkle bounce (done)
   - color twinkles (done)
   - fast pulse (done)
-  - firework dust (explain random)
+  - firework dust (done. explains random())
   - gitch bands (done. So cool.)
   - green ripple reflections
   - marching rainbow
