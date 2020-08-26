@@ -8,7 +8,7 @@ TODO
   - color twinkles (done)
   - fast pulse (done)
   - firework dust (explain random)
-  - gitch bands
+  - gitch bands (done. So cool.)
   - green ripple reflections
   - marching rainbow
   - mllipede
