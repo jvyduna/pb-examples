@@ -13,7 +13,7 @@ TODO
   - marching rainbow (done)
   - mllipede (done)
   - opposites (done)
-  - ranbow melt
+  - ranbow melt (done)
   - slow color shift
   - sound - blinkfade
   - sound - rays (fun)
