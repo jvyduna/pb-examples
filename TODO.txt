@@ -12,7 +12,7 @@ TODO
   - green ripple reflections (done)
   - marching rainbow (done)
   - mllipede (done)
-  - opposites
+  - opposites (done)
   - ranbow melt
   - slow color shift
   - sound - blinkfade
@@ -25,12 +25,18 @@ TODO
 
 - (Ben could do this too) - Select some community patterns for inclusion, including zranger and ChrisNZ
   - One of the flame effect ones from the library
-  - Roger Chang's 2D/3D mapper test patterns
-  - Your PRNG in static random colors
-  - xorcery
-  - lightning + link to your youtube/insta of that install
-  - Some of the 3D patterns  - my scrolling text marquee  - Scott Balay's pew pew pew  - edgeburst and fireflies are highly upvoted (I now understand how that's not a totally pure signal, but I like them too for variety)  - Some of zranger and ChrisNZ's recent work (possibly midpoint displacement or the basic spectrum analyzer)
-
+  - Roger Chang's 2D/3D mapper test patterns
+  - Your PRNG in static random colors
+  - xorcery
+  - lightning + link to your youtube/insta of that install
+  - Some of the 3D patterns
+    - 3D Rotation / Spotlights
+    - cube fire 3D
+    - fast pulse 3d
+  - my scrolling text marquee
+  - Scott Balay's pew pew pew
+  - edgeburst and fireflies are highly upvoted (I now understand how that's not a totally pure signal, but I like them too for variety)
+  - Some of zranger and ChrisNZ's recent work (possibly midpoint displacement or the basic spectrum analyzer)
 
 
 DONE / NOTES
