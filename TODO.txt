@@ -14,7 +14,7 @@ TODO
   - mllipede (done)
   - opposites (done)
   - ranbow melt (done)
-  - slow color shift
+  - slow color shift (done)
   - sound - blinkfade
   - sound - rays (fun)
   - sound spectro kalidastrip

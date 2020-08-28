@@ -1,13 +1,20 @@
-﻿l4 = pixelCount*4
+﻿/*
+  Slow color shift
+*/
+
+l4 = pixelCount * 4     // 4 times the strip length
 
 export function beforeRender(delta) {
-  t1 = time(.15)*PI2
+  t1 = time(.15) * PI2
   t2 = time(.1)
 }
 
 export function render(index) {
-  a = (1 + sin((index / 2 + 5 * sin(t1)))) / 2
-  b = (t2 + 1 + sin((index / 2 + 5 * sin(t1))) / 5 ) + index / l4
-  v = (a * a * a * a)
-  hsv(b, 1, v)
+  h = (t2 + 1 + sin((index / 2 + 5 * sin(t1))) / 5) + index / l4
+
+  //v = (1 + sin((index / 2 + 5 * sin(t1)))) / 2
+  v = wave((index / 2 + 5 * sin(t1)) / PI2)
+  v = v * v * v * v
+
+  hsv(h, 1, v)
 }
