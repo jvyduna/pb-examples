@@ -20,7 +20,7 @@ TODO
   - sound - rays (fun)
   - sound spectro kalidastrip
   - sound - spectromatix optim (is there a new one in the lib?)
-  - sparks center
+  - sparks center (done)
   - sparks (done)
   - spin cycle (done - nominate as replaceable if too many patterns)
 

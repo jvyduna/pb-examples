@@ -17,7 +17,11 @@ numSparks = floor(pixelCount / 12)
 // The friction applies a slowing force to the momentum of each spark
 friction = 1 / pixelCount
 
-// The main sparks array holds the energy of each spark. The energy will 
+/*
+  The main sparks array holds the energy of each spark. The energy will
+  determine how much force is accellerating the spark, as well as how much
+  the pixel at its current position is heated (and therefore how bright is is).
+*/
 sparks = array(numSparks)
 
 // Array of the positions of each spark, inpixels. When `sparkX[1] == 40.2,`
@@ -43,7 +47,7 @@ for (i = 0; i < numSparks; i++) {
   // Initialize each spark's position to a random point on the strip
   sparkX[i] = random(pixelCount)
   // Further sparks are older and have less energy
-  sparks[i] = random(0.4) + (1 - sparkX[i]/pixelCount) 
+  sparks[i] = random(0.4) + (1 - sparkX[i] / pixelCount) 
 }
 
 
