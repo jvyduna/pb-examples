@@ -21,23 +21,47 @@ TODO
   - sound spectro kalidastrip
   - sound - spectromatix optim (is there a new one in the lib?)
   - sparks center
-  - sparks (deserves a nice explinaion)
-  - spin cycle (done - nominate as replaceable)
+  - sparks (done)
+  - spin cycle (done - nominate as replaceable if too many patterns)
 
-- (Ben could do this too) - Select some community patterns for inclusion, including zranger and ChrisNZ
-  - One of the flame effect ones from the library
-  - Roger Chang's 2D/3D mapper test patterns
-  - Your PRNG in static random colors
-  - xorcery
-  - lightning + link to your youtube/insta of that install
-  - Some of the 3D patterns
+- Select community patterns for inclusion:
+  - Ben's
+    - sparkfire
+      - look into adaptations to strip length; see forum
+    - edgeburst
+    - static random colors (deterministic PRNG)
+    - xorcery
+    - lightning
+      - installed: https://www.instagram.com/p/B4TuvDSBXHl/
+      - strips: https://www.instagram.com/p/B4F-93EBNVV/
+  - 3D patterns
     - 3D Rotation / Spotlights
-    - cube fire 3D
-    - fast pulse 3d
-  - my scrolling text marquee
+      - post video
+    - cube fire 3D (Wizard)
+      - post video
+    - fast pulse 3d (Wizard)
+      - post video
+  - Jvyduna Scrolling text marquee with fix from forum
   - Scott Balay's pew pew pew
-  - edgeburst and fireflies are highly upvoted (I now understand how that's not a totally pure signal, but I like them too for variety)
-  - Some of zranger and ChrisNZ's recent work (possibly midpoint displacement or the basic spectrum analyzer)
+    - permission secured / MIT
+    - use sound reactive one
+  - zranger Jon 
+    - permission secured / MIT
+    - Midpoint displacement
+    - Multisegment
+    - Color temperature
+  - Roger Chang
+    - permission secured / already MIT https://github.com/Roger-random/glowflow/blob/master/LICENSE
+    - 2D/3D mapper test patterns
+    - Accelerometer test pattern
+  - ChrisNZ
+    - basic spectrum analyzer
+    - 2D Spiral Twirls
+  - Unknown author: Fireflies
+
+- Are sliders and pickers represented?
+
+- Re-record 2D "previews" on 16x16 SK9822
 
 
 DONE / NOTES
