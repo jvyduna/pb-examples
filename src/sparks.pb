@@ -1,30 +1,34 @@
 ﻿/*
   Sparks
   
-  Sparks is a great pattern that showcases techniques such as:
+  Sparks is a pattern that illustrates:
   
-    - Precomputing the display with a render buffer in beforeRender()
+    - Precomputing the display with a render buffer pixels[] in beforeRender()
     - Calculating basic 2D particle physics
   
-  Understand this pattern, and you'll be close to undersandindg "spark center" 
+  Understand this pattern, and you'll have a good foundation for "sparks center" 
   and "spark fire".
 */
 
 // This is how many sparks we'll be keeping track of. Set this to 1 to visualize
-// the bahavior of a single spark. For 4m of 60/m there's 20 sparks running.
+// the behavior of a single spark. For 4m of 60/m there's 20 sparks running.
 numSparks = floor(pixelCount / 12)
+
+// These constants set the bounds for a newly spawned spark's initial velocity
+ISEM = 1               // ISEM = Initial Spark Energy Minimum
+ISER = 0.4 * ISEM      // ISER = Initial Spark Energy Range
 
 // The friction applies a slowing force to the momentum of each spark
 friction = 1 / pixelCount
 
 /*
   The main sparks array holds the energy of each spark. The energy will
-  determine how much force is accellerating the spark, as well as how much
+  determine how much force is accelerating the spark, as well as how much
   the pixel at its current position is heated (and therefore how bright is is).
 */
 sparks = array(numSparks)
 
-// Array of the positions of each spark, inpixels. When `sparkX[1] == 40.2,`
+// Array of the positions of each spark, in pixels. When `sparkX[1] == 40.2,`
 // the second spark is heating up the air around pixel 40.
 sparkX = array(numSparks)
 
@@ -40,17 +44,17 @@ pixels = array(pixelCount)
 
 /*
   Initialize each spark to a random position in the strip. Without this, the 
-  pattern clusters on initial load because all sparks start at once whilw the
+  pattern clusters on initial load because all sparks start at once while the
   cadence slowly splays out.
 */
 for (i = 0; i < numSparks; i++) {
   // Initialize each spark's position to a random point on the strip
   sparkX[i] = random(pixelCount)
   // Further sparks are older and have less energy
-  sparks[i] = random(0.4) + (1 - sparkX[i] / pixelCount) 
+  sparks[i] = ISEM * (1 - sparkX[i] / pixelCount) + random(ISER)
 }
 
-
+// Once per frame...
 export function beforeRender(delta) {
   // delta is the time elapsed (in ms) since the last beforeRender(). Scale 
   // delta for use below. For example, 8ms becomes 0.8
@@ -69,20 +73,25 @@ export function beforeRender(delta) {
     // If a spark has fizzled out...
     if (sparks[i] <= 0) {
       // Initialize each spark's energy to a random value between 1.0 and 1.4
-      sparks[i] = 1 + random(.4)
+      sparks[i] = ISEM + random(ISER)
       // And set its position back to the start
       sparkX[i] = 0
     }
     
-    // Slow it down (lose some energy) with friction, which is propostional to 
+    // Slow it down (lose some energy) with friction, which is proportional to 
     // the time that's passed
     sparks[i] -= friction * delta
     
     // If a spark's energy has gone negative, set it to zero. 
     sparkX[i] = max(sparkX[i], 0)
     
-    // Advance the position of each spark by the square of its energy (~force),
-    // proportional to how much time has passed
+    /*
+      Advance the position of each spark by the square of its energy (~force),
+      proportional to how much time has passed. Using the square is optional,
+      and produces a final effect more like the energy of the spark is also 
+      imparting a force on it (accellerating it). If you don't use the square,
+      the motion appears more like a puck slowing down across ice.
+    */
     sparkX[i] += sparks[i] * sparks[i] * delta
     
     // If a spark's position exceeds the end of the strip, reset its position
@@ -94,9 +103,12 @@ export function beforeRender(delta) {
     
     /*
       This adds the energy from this spark to the existing heat in the pixel at
-      its current positon. Notice that sparkX[i] contains decimal values; using
+      its current position. Notice that sparkX[i] contains decimal values; using
       it as an array index implicitly drops the fractional part, as if we had 
       first called floor() on it.
+
+      Notice that sparks[i] and pixels[x] can both contain values > 1, and 
+      hsv() below will clamp brightness and saturation values to be within 0..1.
     */
     pixels[sparkX[i]] += sparks[i]
   }
@@ -108,10 +120,11 @@ export function render(index) {
 
   /*
     Let's consider hsv(h, s, v) in reverse order:
-    v: Brightness value is the gamma-corrected value of the "heat" in the pixel.
+    v: Brightness value is the "heat" in the pixel
     s: To make hot pixels white, `1.1 - v` takes hot/energetic pixels and 
-    de saturates them to white (low saturation).
-    h: The hue is set to 0.02, a deep orange-red. Shows red for old sparks.
+       desaturates them to white (which is when s has a low saturation). Old
+       slow sparks are saturated red.
+    h: The hue is set to 0.02, a deep orange-red.
   */
   
   hsv(.02, 1.1 - v, v)
