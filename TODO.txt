@@ -16,7 +16,7 @@ TODO
   - ranbow font (done)
   - ranbow melt (done)
   - slow color shift (done)
-  - sound - blinkfade
+  - sound - blinkfade (done + sound simulator)
   - sound - rays (fun)
   - sound spectro kalidastrip
   - sound - spectromatix optim (is there a new one in the lib?)
