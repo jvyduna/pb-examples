@@ -1,6 +1,8 @@
 TODO
 
-- Update and lightly comment the rest of the default patterns, especially the PI Sound patterns
+- Automate binary bytecode export with Firestorm
+
+- Update and lightly comment the rest of the default patterns
   - block reflections (done, explores remainder / modulus)
   - color bands (done, good example of intermittent white)
   - color fade pulse (done)
@@ -17,7 +19,7 @@ TODO
   - ranbow melt (done)
   - slow color shift (done)
   - sound - blinkfade (done + sound simulator)
-  - sound - rays (fun)
+  - sound - rays (done)
   - sound spectro kalidastrip
   - sound - spectromatix optim (is there a new one in the lib?)
   - sparks center (done)
