@@ -16,16 +16,23 @@
 // Speed that the rays travel down the strip
 speed = 0.05
 
-export var energyAverage
+// These vars are set by the external sensor board, if one is connected. We
+// don't actually use light readings in this pattern, so if the `light` value
+// remains -1, no sensor board is connected.
+export var light = -1 
 export var maxFrequencyMagnitude
 export var maxFrequency
 
-vals = array(pixelCount)
 hues = array(pixelCount)
+vals = array(pixelCount)
+
+// A position pointer, in pixels, that turns hues[] and vals[] into a circular
+// buffer
 pos = 0
+// Stores the last brightness value to feed back into the PI gain controller 
 lastVal = 0
 
-export var pic = makePIController(.05, .35, 250, 0, 500)
+export var pic = makePIController(.05, .35, 200, 0, 400)
 
 // Make a new PI Controller
 function makePIController(kp, ki, start, min, max) {
@@ -51,6 +58,8 @@ export function beforeRender(delta) {
   // To make the rays travel along the strip, sweep a position offset pointer
   // down the arrays of values and hues
   pos = (pos + delta * speed) % pixelCount
+  
+  if (light == -1) simulateSound()  // No sensor board attached
   
   // The brightness value will be determined by the magnitude of the most
   // intense frequency. This is also our feedback to the PI controller.
@@ -87,4 +96,16 @@ export function render(index) {
   v = v * v  // Gamma correction
 
   hsv(h, 1, v)
+}
+
+/* 
+  Simulate the sensor board variables used in this pattern, if no senor board is
+  detected. The values and waveforms were chosen to approximate the look // 
+  when sound is sensed. 
+*/
+function simulateSound() { 
+  t1 = time(10 / 65.536) 
+  maxFrequency = 2000 * (1 + wave(t1)) * (0.7 + random(0.3)) 
+  maxFrequencyMagnitude = log(1.05 + wave(17 * t1) * wave( 19 * t1) * wave(23 * t1)) 
+  maxFrequencyMagnitude *= 0.7 + random(0.3)
 }
