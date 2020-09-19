@@ -20,7 +20,7 @@ TODO
   - slow color shift (done)
   - sound - blinkfade (done + sound simulator)
   - sound - rays (done + simpler sound sim)
-  - sound spectro kalidastrip
+  - sound spectro kalidastrip (done + frequencyData sim)
   - sound - spectromatix optim (is there a new one in the lib?)
   - sparks center (done)
   - sparks (done)

@@ -100,8 +100,8 @@ export function render(index) {
 
 /* 
   Simulate the sensor board variables used in this pattern, if no senor board is
-  detected. The values and waveforms were chosen to approximate the look // 
-  when sound is sensed. 
+  detected. The values and waveforms were chosen to approximate the look when
+  sound is sensed. 
 */
 function simulateSound() { 
   t1 = time(10 / 65.536) 
