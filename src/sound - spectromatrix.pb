@@ -154,6 +154,37 @@ function doAt(hertz, delta, fn) {
   detected. The values and waveforms were chosen to approximate the look when
   real sound is sensed for a basic 4-on-the-floor loop.
 */
+BPM = 120
+var measurePeriod = 4 * 60 / BPM / 65.536
+
 function simulateSound() {
-  // To implement
+  tM = time(measurePeriod) // 2 seconds per measure @120 BPM
+  tP = time(8 * measurePeriod) // 8 measures per phrase
+  for (i = 0; i < 32; i++) frequencyData[i] = 0
+  
+  beat = (-4 * tM + 5) % 1 // 4 attacks per measure
+  beat *= .02 * pow(beat, 4)  // Scale magnitute and make concave-up
+  // Splay energy out, most energy at lowest frequency bins
+  for (i = 0; i < 10; i++) frequencyData[i] += beat * (10 - i) / 10
+
+  claps = .006 * square(2 * tM - .5, .10) // "&" of every beat
+  for (i = 9; i < 14 + random(5); i++) 
+    frequencyData[i] += claps * (.7 + .6 * random(i % 2))
+
+  highHat = .01 * square(4 * tM - .5, .05) // Beats 2 and 4
+  for (i = 18; i < 20; i++) frequencyData[i] += highHat * (.8 + random(.4))
+
+  lead = 4 + floor(16 * wander(tP))  // Wandering fundamental synth's freq bin
+  for (i = 4; i < 20; i++)
+    // Excite the fundamental and, 40% of the time, 4 bins up
+    frequencyData[i] += .005 * (lead == i || lead == (i - 4) * r(.4))
 }
+
+// Random-ish perlin-esque walk for t in 0..1, outputs 0..1
+// https://www.desmos.com/calculator/enggm6rcrm
+function wander(t) {
+  t *= 49.261 // Selected so t's wraparound will have continuous output
+  return (wave(t / 2) * wave(t / 3) * wave(t / 5) + wave(t / 7)) / 2
+}
+
+function r(p) { return random(1) < p } // Randomly true with probability p
