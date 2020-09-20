@@ -2,30 +2,6 @@ TODO
 
 - Automate binary bytecode export with Firestorm
 
-- Update and lightly comment the rest of the default patterns
-  - block reflections (done, explores remainder / modulus)
-  - color bands (done, good example of intermittent white)
-  - color fade pulse (done)
-  - color twinkle bounce (done)
-  - color twinkles (done)
-  - fast pulse (done)
-  - firework dust (done. explains random())
-  - gitch bands (done. So cool.)
-  - green ripple reflections (done)
-  - marching rainbow (done)
-  - mllipede (done)
-  - opposites (done)
-  - ranbow font (done)
-  - ranbow melt (done)
-  - slow color shift (done)
-  - sound - blinkfade (done + sound simulator)
-  - sound - rays (done + simpler sound sim)
-  - sound spectro kalidastrip (done + frequencyData sim)
-  - sound - spectromatix optim (is there a new one in the lib?)
-  - sparks center (done)
-  - sparks (done)
-  - spin cycle (done - nominate as replaceable if too many patterns)
-
 - Select community patterns for inclusion:
   - Ben's
     - sparkfire
@@ -88,3 +64,27 @@ DONE / NOTES
 thought was clearer. Previous versions had v set to 0.2, which quite muted the
 preview image. If this was intentional because its intensity dominates the
 pattern list, please but it back in.)
+
+- Update and lightly comment the rest of the default patterns
+  - block reflections (done, explores remainder / modulus)
+  - color bands (done, good example of intermittent white)
+  - color fade pulse (done)
+  - color twinkle bounce (done)
+  - color twinkles (done)
+  - fast pulse (done)
+  - firework dust (done. explains random())
+  - gitch bands (done. So cool.)
+  - green ripple reflections (done)
+  - marching rainbow (done)
+  - mllipede (done)
+  - opposites (done)
+  - ranbow font (done)
+  - ranbow melt (done)
+  - slow color shift (done)
+  - sound - blinkfade (done + sound simulator)
+  - sound - rays (done + simpler sound sim)
+  - sound spectro kalidastrip (done + frequencyData sim)
+  - sound - spectromatix optim (done)
+  - sparks center (done)
+  - sparks (done)
+  - spin cycle (done - nominate as replaceable if too many patterns)

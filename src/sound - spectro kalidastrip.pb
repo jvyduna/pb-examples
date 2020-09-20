@@ -31,14 +31,15 @@ export var frequencyData = array(32)
 // To tell if we should emphasize a frequency, we will compare it to it's
 // average value over this many milliseconds.
 averageWindowMs = 1500
-speed = 2  // Seconds between cycles
+fade = 0.75 // What percentage of the pixel's brightness is retained each frame
+speed = 2   // Seconds between cycles
 
 // The PI controller will adjust it's sensitivity to loudness until the average
 // pixel brightness value is targetFill
 targetFill = .2
 
 // Store the sum of all brightness values in the strip, to feed back to the PI 
-// // controller
+// controller
 brightnessFeedback = 0
 
 // The averages array will store the average of each frequency bin's readings 
@@ -75,6 +76,9 @@ export function beforeRender(delta) {
                   targetFill - brightnessFeedback / pixelCount)
   brightnessFeedback = 0
   t1 = time(speed / 65.536)
+    
+  // If no sensor board is attached, simulate sensor data at 40Hz
+  if (light == -1) doAt(40, delta, simulateSound)
 
   /*
     To calculate and store the average of each frequency bin's readings over the
@@ -87,9 +91,6 @@ export function beforeRender(delta) {
     the benefit of requiring low storage.
   */
   dw = delta / averageWindowMs
-  
-  // If no sensor board is attached, simulate sensor data at 40Hz
-  if (light == -1) doAt(40, delta, simulateSound)
   
   // For each frequency bin
   for (i = 0; i < 32; i++) {
@@ -151,10 +152,11 @@ export function render(index) {
   
   s = 2 - v // Turn high v into white (when v > 1)
   
+  // Hue is frequency-based with a 25% progression based on pixel position
   h = i / 31 + index / pixelCount / 4
   
   // Decay each pixel's brightness by 25% per frame and re-add the calculated v
-  pixels[index] = pixels[index] * .75 + v
+  pixels[index] = pixels[index] * fade + v
   v = pixels[index]
   
   // Feedback to the PI contoller to normalize the strip's overall brightness
@@ -162,16 +164,17 @@ export function render(index) {
   hsv(h, s, v)
 }
 
-// Call a function `fn` at a specified freqency, given ms elapsed `delta`
+// doAt calls a function `fn` at a specified freqency, given ms elapsed `delta`
+// For example, simulate sensor board data updates at 40Hz.
 var accumDelta = 0
 
 function doAt(hertz, delta, fn) {
   accumDelta += delta // Accumulated miliseconds
-  if (accumDelta <= 1000 / hertz) {  // Sensor board updates at 40Hz
-    return // No need to recompute simulated sound
+  if (accumDelta <= 1000 / hertz) {
+    return // Do nothing
   } else {
     accumDelta -= 1000 / hertz // Assumes `delta < 1000 / hertz`` on average
-    fn()
+    fn() // Call the passed-in function
   }
 }
 
