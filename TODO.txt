@@ -2,7 +2,7 @@ TODO
 
 - Automate binary bytecode export with Firestorm
 
-- Select community patterns for inclusion:
+- Adapt community patterns for inclusion:
   - Ben's
     - sparkfire
       - look into adaptations to strip length; see forum
@@ -29,10 +29,9 @@ TODO
     - Multisegment
     - Color temperature
   - Roger Chang
-    - permission secured / already MIT https://github.com/Roger-random/glowflow/blob/master/LICENSE
-    - 2D/3D mapper test patterns
     - Accelerometer test pattern
   - ChrisNZ
+    - Never responded, couldn't get in touch
     - basic spectrum analyzer
     - 2D Spiral Twirls
   - Unknown author: Fireflies
@@ -88,3 +87,9 @@ pattern list, please but it back in.)
   - sparks center (done)
   - sparks (done)
   - spin cycle (done - nominate as replaceable if too many patterns)
+
+- Adapted community patterns for inclusion
+     Roger Chang
+    - permission secured / already MIT https://github.com/Roger-random/glowflow/blob/master/LICENSE
+    - 2D/3D mapper test patterns adapted into "Utility: Mapping helper 2D/3D"
+
