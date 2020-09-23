@@ -12,9 +12,6 @@ TODO
     - lightning
       - installed: https://www.instagram.com/p/B4TuvDSBXHl/
       - strips: https://www.instagram.com/p/B4F-93EBNVV/
-  - 3D patterns
-    - 3D Rotation / Spotlights
-      - post video
   - Jvyduna Scrolling text marquee with fix from forum
   - Scott Balay's pew pew pew
     - permission secured / MIT
@@ -94,4 +91,6 @@ pattern list, please but it back in.)
     - cube fire 3D (Wizard)
       - linked video
     - fast pulse 3d (Wizard)
+      - linked video
+    - 3D Rotation / Spotlights
       - linked video
