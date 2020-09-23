@@ -17,8 +17,6 @@ TODO
       - post video
     - cube fire 3D (Wizard)
       - link video
-    - fast pulse 3d (Wizard)
-      - post video
   - Jvyduna Scrolling text marquee with fix from forum
   - Scott Balay's pew pew pew
     - permission secured / MIT
@@ -94,5 +92,6 @@ pattern list, please but it back in.)
     - 2D/3D mapper test patterns adapted into "Utility: Mapping helper 2D/3D"
 
   - 3D patterns
-    - cube fire 3D (Wizard)
-      - post video
+    - fast pulse 3D (Wizard)
+      + video
+
