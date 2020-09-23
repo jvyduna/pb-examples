@@ -13,6 +13,8 @@
   bounces across the boundary of the strip's endpoints with a circular
   continuance.
 */
+
+
 export function beforeRender(delta) {
   /*
     This 0..1 time() output cycles every (0.1 * 65.535) seconds. We'll use this 
