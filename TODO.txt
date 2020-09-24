@@ -13,9 +13,6 @@ TODO
       - installed: https://www.instagram.com/p/B4TuvDSBXHl/
       - strips: https://www.instagram.com/p/B4F-93EBNVV/
   - Jvyduna Scrolling text marquee with fix from forum
-  - Scott Balay's pew pew pew
-    - permission secured / MIT
-    - use sound reactive one
   - zranger Jon 
     - permission secured / MIT
     - Midpoint displacement
@@ -25,7 +22,7 @@ TODO
     - Accelerometer test pattern
   - ChrisNZ
     - Never responded, couldn't get in touch
-    - basic spectrum analyzer
+    - basic matrix spectrum analyzer
     - 2D Spiral Twirls
   - Unknown author: Fireflies
 
@@ -83,7 +80,7 @@ pattern list, please but it back in.)
 
 - Adapted community patterns for inclusion
   - Roger Chang
-    - permission secured via email, and Roger oted it's already MIT:
+    - permission secured via email, and Roger noted it's already MIT:
       https://github.com/Roger-random/glowflow/blob/master/LICENSE
     - 2D/3D mapper test patterns adapted into "Utility: Mapping helper 2D/3D"
 
@@ -94,3 +91,7 @@ pattern list, please but it back in.)
       - linked video
     - 3D Rotation / Spotlights
       - linked video
+
+  - Scott Balay's pew pew pew
+    - permission secured / MIT
+    - use sound reactive one
