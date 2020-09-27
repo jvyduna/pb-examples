@@ -10,7 +10,7 @@ TODO
     - lightning
       - installed: https://www.instagram.com/p/B4TuvDSBXHl/
       - strips: https://www.instagram.com/p/B4F-93EBNVV/
-  - Jvyduna Scrolling text marquee with fix from forum
+  
   - zranger Jon 
     - permission secured / MIT
     - Midpoint displacement
@@ -24,7 +24,8 @@ TODO
     - 2D Spiral Twirls
   - Unknown author: Fireflies
 
-- Automate binary bytecode export with Firestorm
+- [Could delegate to Ben - he'd be much faster] 
+  - Automate binary bytecode export / "minting imager" within Firestorm
 
 - Are sliders and pickers represented?
 
@@ -100,3 +101,5 @@ DONE / NOTES
   - Scott Balay's pew pew pew
     - permission secured / MIT
     - use sound reactive one
+
+  - Jvyduna Scrolling text marquee with fix from forum
