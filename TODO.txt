@@ -7,9 +7,7 @@ TODO
     - edgeburst
     - static random colors (deterministic PRNG)
     - xorcery
-    - lightning
-      - installed: https://www.instagram.com/p/B4TuvDSBXHl/
-      - strips: https://www.instagram.com/p/B4F-93EBNVV/
+    
   
   - zranger Jon 
     - permission secured / MIT
@@ -103,3 +101,5 @@ DONE / NOTES
     - use sound reactive one
 
   - Jvyduna Scrolling text marquee with fix from forum
+
+  - lightning ZAP!
