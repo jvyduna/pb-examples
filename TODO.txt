@@ -5,10 +5,8 @@ TODO
     - sparkfire
       - look into adaptations to strip length; see forum
     - edgeburst
-    - static random colors (deterministic PRNG)
     - xorcery
     
-  
   - zranger Jon 
     - permission secured / MIT
     - Midpoint displacement
@@ -22,10 +20,8 @@ TODO
     - 2D Spiral Twirls
   - Unknown author: Fireflies
 
-- [Could delegate to Ben - he'd be much faster] 
-  - Automate binary bytecode export / "minting imager" within Firestorm
 
-- Are sliders and pickers represented?
+- Are UI sliders represented? Quick: add to lightning ZAP for speed.
 
 - Re-record Youtube 2D "previews" on 16x16 SK9822
 
@@ -103,3 +99,8 @@ DONE / NOTES
   - Jvyduna Scrolling text marquee with fix from forum
 
   - lightning ZAP!
+    - Includes a color picker
+
+  - Automate binary bytecode export / "minting imager" within Firestorm
+
+  - static random colors (deterministic PRNG)
