@@ -20,6 +20,15 @@ pixels = array(pixelCount)
 x = 0
 timer = 0
 
+// Set up variables to store the chosen bolt color
+var hue = 0, saturation = 0, value = 1
+// Add a color picker control to make it easy to change the color of the bolts!
+export function hsvPickerBoltColor(_h, _s, _v) {
+  hue = _h
+  saturation = _s
+  value = _v
+}
+
 export function beforeRender(delta) {
   // Most frames we are fading all pixels and counting down a timer
   for (i = 0; i < pixelCount; i++)
@@ -51,5 +60,5 @@ export function beforeRender(delta) {
 
 export function render(index) {
   v = pixels[index]
-  hsv(2/3, 0, v)
+  hsv(hue, saturation, v * value)
 }
