@@ -4,9 +4,9 @@ TODO
   - Ben's
     - sparkfire
       - look into adaptations to strip length; see forum
-    - edgeburst
-    - xorcery
-    
+    - xorcery 2D / 3D
+      - record Youtube preview
+
   - zranger Jon 
     - permission secured / MIT
     - Midpoint displacement
@@ -24,6 +24,10 @@ TODO
 - Are UI sliders represented? Quick: add to lightning ZAP for speed.
 
 - Re-record Youtube 2D "previews" on 16x16 SK9822
+
+- Move media to Ben's youtube account if time/energy
+
+
 
 
 DONE / NOTES
@@ -104,3 +108,5 @@ DONE / NOTES
   - Automate binary bytecode export / "minting imager" within Firestorm
 
   - static random colors (deterministic PRNG)
+
+  - edgeburst
