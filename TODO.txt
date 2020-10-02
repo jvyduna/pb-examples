@@ -1,24 +1,27 @@
 TODO
 
 - Adapt community patterns for inclusion:
-  - Ben's
-    - sparkfire
-      - look into adaptations to strip length; see forum
-    - xorcery 2D / 3D
-      - record Youtube preview
 
-  - zranger Jon 
-    - permission secured / MIT
-    - Midpoint displacement
-    - Multisegment
-    - Color temperature
-  - Roger Chang
-    - Accelerometer test pattern
-  - ChrisNZ
-    - Never responded, couldn't get in touch
-    - basic matrix spectrum analyzer
-    - 2D Spiral Twirls
-  - Unknown author: Fireflies
+  Currently in the repo, not yet normalized
+    - Ben's
+      - sparkfire
+        - look into adaptations to strip length; see forum
+      - xorcery 2D / 3D
+        - record Youtube preview
+    - zranger Jon 
+      - permission secured / MIT
+      - Midpoint displacement
+      - Multisegment
+      - Color temperature
+
+  Not yet in repo
+    - Roger Chang
+      - Accelerometer test pattern
+    - ChrisNZ
+      - Never responded, couldn't get in touch
+      - basic matrix spectrum analyzer
+      - 2D Spiral Twirls
+    - Unknown author: Fireflies
 
 
 - Are UI sliders represented? Quick: add to lightning ZAP for speed.
