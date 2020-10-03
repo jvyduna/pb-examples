@@ -1,4 +1,4 @@
-﻿/*
+/*
   In this pattern we'll learn a technique to send an object across the strip.
   
   Our goal is to have a fiery rocket (oranges and reds) followed by a sparkling
@@ -9,7 +9,7 @@
   The pixel should be red if it's a little behiind that, then some sparks, 
   then dark. Then I'll advance that positon between frames." While you could 
   build it that way, this pattern helps you start thinking in terms of,
-  "Everything's a travelling wave or derivative of one." 
+  "Everything's a travelling wave or derivative of one."
 */
 
 export function beforeRender(delta) {

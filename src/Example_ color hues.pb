@@ -1,4 +1,4 @@
-﻿/*
+/*
   In this example you'll see:
   - Colors!!!
   - Using an array to switch between modes

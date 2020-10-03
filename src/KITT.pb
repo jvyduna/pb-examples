@@ -1,4 +1,4 @@
-﻿/*
+/*
   Knight Rider: A car named KITT gains sentience and fights critme and all that 
   good stuff.
   

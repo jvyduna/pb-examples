@@ -1,4 +1,4 @@
-﻿/*
+/*
   sound - spectro kalidastrip
 
   This pattern is designed to use the sensor expansion board, but falls back to

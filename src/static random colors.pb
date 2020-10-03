@@ -4,7 +4,7 @@
   What if you need a sequence of random numbers? Well, you could set up a loop
   that runs once and populates an array with random values. 
   
-    var a = array(n) 
+    var a = array(n)
     for(i = 0; i < n; i++) a[i] = random(1)
   
   They would be a different sequence of random values each time you resarted the

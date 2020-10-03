@@ -1,4 +1,4 @@
-﻿/*
+/*
   This pattern is meant to be displayed on an LED matrix or other 2D surface 
   defined in the Mapper tab.
   
@@ -26,7 +26,7 @@ export function beforeRender(delta) {
   z = 1 + wave(time(13 / 65.536)) * 5 // Sine wave, min = 1, max = 6
 }
 
-export function render2D(index, x, y) {
+export function render2D(index, x, y) { 
   /*
     This general form produces an egg carton surface: f(x,y) = sin(x) + cos(y)
     Plot: https://www.google.com/search?q=sin%28x%29+%2B+cos%28y%29

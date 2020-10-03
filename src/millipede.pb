@@ -1,4 +1,4 @@
-﻿/*
+/*
   Millipede
 
   There's something mesmerizing about the waves that travel along a millipede's

@@ -1,4 +1,4 @@
-﻿/* 
+/* 
   Color twinkle bounce
   
   The wave math in this pattern shows forming a pattern in terms of the

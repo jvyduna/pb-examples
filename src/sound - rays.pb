@@ -1,4 +1,4 @@
-﻿/*
+/*
   sound - rays
 
   This pattern is designed to use the sensor expansion board, but falls back to
@@ -91,7 +91,7 @@ export function render(index) {
     in has the effect of *slowing* the hue progression.
   */
   h += index / pixelCount / 4 + t1
-  
+
   v = vals[i]
   v = v * v  // Gamma correction
 

@@ -1,4 +1,4 @@
-﻿/*
+/*
   Color twinkles
   
   What's interesting about this pattern is the way in which it uses `index`

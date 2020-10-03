@@ -1,4 +1,4 @@
-﻿/*
+/*
   In this example you'll see:
   - Using an array to switch between modes
   - Lambda style function expressions

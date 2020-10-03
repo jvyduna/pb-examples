@@ -1,4 +1,4 @@
-﻿/*
+/*
   sound - blink fade
 
   This pattern is designed to use the sensor expansion board.

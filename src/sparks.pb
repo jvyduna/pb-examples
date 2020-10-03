@@ -1,4 +1,4 @@
-﻿/*
+/*
   Sparks
   
   Sparks is a pattern that illustrates:

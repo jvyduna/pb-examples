@@ -1,5 +1,5 @@
 /*
-  sound - Pew-Pew-Pew!
+  Sound - Pew-Pew-Pew!
 
   Pew-pew-pew is one of the most popular user-submitted patterns on the
   community pattern library, for good reason. It was one of the first Pixelblaze 

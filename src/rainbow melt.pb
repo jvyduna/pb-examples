@@ -1,4 +1,4 @@
-﻿/*
+/*
   Rainbow melt
 
   This is derived from the "rainbow fonts" pattern, but adds dark regions 

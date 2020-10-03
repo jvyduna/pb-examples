@@ -1,4 +1,4 @@
-﻿/*
+/*
   Slow color shift
 */
 
@@ -10,9 +10,8 @@ export function beforeRender(delta) {
 }
 
 export function render(index) {
-  h = (t2 + 1 + sin((index / 2 + 5 * sin(t1))) / 5) + index / l4
+  h = (t2 + 1 + sin(index / 2 + 5 * sin(t1)) / 5) + index / l4
 
-  //v = (1 + sin((index / 2 + 5 * sin(t1)))) / 2
   v = wave((index / 2 + 5 * sin(t1)) / PI2)
   v = v * v * v * v
 

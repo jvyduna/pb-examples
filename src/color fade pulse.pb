@@ -1,4 +1,4 @@
-﻿/*
+/*
   Color fade pulse
   
   Pulses travel slowly to the left, while colors travel quickly to the right.

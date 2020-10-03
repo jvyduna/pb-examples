@@ -1,4 +1,4 @@
-﻿/*
+/*
   Glitch bands 
 
   Glitch bands is the result of two sharply convex, peaked waves, traveling

@@ -1,4 +1,4 @@
-﻿/*
+/*
   Sparks center
   
   This pattern builds on the "sparks" pattern.

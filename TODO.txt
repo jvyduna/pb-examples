@@ -84,6 +84,13 @@ DONE / NOTES
   - sparks
   - spin cycle (nominate as replaceable if too many patterns)
 
+- Added a Python script to generate the sourcecode in src/ from epe/.
+
+  The .pb files in src/ are just for convenient editing and viewing in text
+  editors and GitHub. The .epe files also contain the source code, so there was
+  the change for disagreement as to which was the authoritative version. With
+  this change, it's assumed that epe/ and bin/ are authoritative, and src/ is a
+  derived convenience.
 
 - Adapted community patterns for inclusion
   - Roger Cheng

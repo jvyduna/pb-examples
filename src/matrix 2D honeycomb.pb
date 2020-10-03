@@ -1,4 +1,4 @@
-﻿/*
+/*
   This pattern is meant to be displayed on an LED matrix or other 2D surface 
   defined in the Mapper tab.
   

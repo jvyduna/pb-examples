@@ -1,4 +1,4 @@
-﻿/*
+/*
   Color bands has a chill vibe that comes from applying slower phase shifts to
   shorter wavelengths.
   

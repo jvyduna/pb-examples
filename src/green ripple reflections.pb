@@ -1,4 +1,4 @@
-﻿/*
+/*
   Green ripple reflections
 
   Using a single hue of 0.3 (green), we can still output light and dark greens,

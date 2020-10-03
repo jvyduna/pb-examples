@@ -30,7 +30,7 @@ export function render(index) {
   v = triangle(edge)    // Doubles the frequency
 
   h = edge * edge - .2  // Expand violets
-
+  
   s = 1
 
   hsv(h, s, v)

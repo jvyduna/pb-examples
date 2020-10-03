@@ -1,4 +1,4 @@
-﻿/*
+/*
  In this example you'll see:
  - time and animation
  - using an array to switch between modes

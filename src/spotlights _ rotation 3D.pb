@@ -60,7 +60,7 @@ export function render2D(index, x, y) {
 
 // In 1D it's a frenetic swooping region
 export function render(index) {
-  render3D(index, index / pixelCount, 0, 0)
+  render3D(index, index / pixelCount * 2, 0, 0)
 }
   
 

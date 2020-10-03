@@ -1,4 +1,4 @@
-﻿/*
+/*
   Firework dust is for sparkle ponies.
 
   random(v) returns a random decimal number between 0 and v.

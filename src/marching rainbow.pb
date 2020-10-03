@@ -1,4 +1,4 @@
-﻿/*
+/*
   Marching rainbow
 
   It starts with a wave of a wave of a wave. A triple rainbow, all the wave.
