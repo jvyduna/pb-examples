@@ -1,0 +1,1 @@
+{"sliderActiveSegment":0,"sliderSpeed":0.1511,"sliderEffect":0.1709,"sliderSize":0.186,"hsvPickerColor":[0.125,0.9725490196078431,1]}

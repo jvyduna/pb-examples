@@ -4,8 +4,6 @@ TODO
 
   Currently in the repo, not yet normalized
     - Ben's
-      - sparkfire
-        - look into adaptations to strip length; see forum
       - xorcery 2D / 3D
         - record Youtube preview
     - zranger Jon 
@@ -18,7 +16,7 @@ TODO
     - Roger Chang
       - Accelerometer test pattern
     - ChrisNZ
-      - Never responded, couldn't get in touch
+      - Permission secired
       - basic matrix spectrum analyzer
       - 2D Spiral Twirls
     - Unknown author: Fireflies
@@ -120,3 +118,5 @@ DONE / NOTES
   - static random colors (deterministic PRNG)
 
   - edgeburst
+
+  - sparkfire (Some adaptations for strip length)
