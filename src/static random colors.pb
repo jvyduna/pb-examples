@@ -17,7 +17,8 @@
   tweak, it can render the same random sequence on each restart.
 */
 
-// This seed will be set to a random value each time the pattern is loaded
+// This seed will be set to a random value each time the pattern is loaded.
+// Change to a constant to freeze a particular pseudorandom sequence.
 var seed = random(0xffff) 
 
 // 16 bit xorshift from 
@@ -42,6 +43,8 @@ export function beforeRender(delta) {
     Set this to a particular constant. Like 42.
   */
   xs = seed 
+  
+  t1 = time(5.4 / 65.536) // Used to fade each pixel in and out
 }
 
 export function render(index) {
@@ -55,5 +58,9 @@ export function render(index) {
   // Adjust saturation to favor vibrant colors, but still allow whites/pastels
   s = 1 - s * s * s 
 
-  hsv(h, s, 1)
+  // Each pixel is faded in and out on a random phase. To make it truly static, 
+  // just set v to be 1.
+  v = wave(t1 + pseudorandomFraction())
+  
+  hsv(h, s, v * v)
 }
