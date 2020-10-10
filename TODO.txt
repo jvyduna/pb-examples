@@ -15,17 +15,15 @@ TODO
   Not yet in repo
     - Roger Chang
       - Accelerometer test pattern
-    - ChrisNZ
-      - Permission secired
-      - basic matrix spectrum analyzer
-
     - Unknown author: Fireflies
 
 - Are UI sliders represented? Quick: add to lightning ZAP for speed.
 
 - Re-record Youtube 2D "previews" on 16x16 SK9822
+  - Sectrum analyzer 2D has no YouTube demo but it's cool
 
 - Move media to Ben's youtube account if time/energy
+  - Might be moot bacause possibly 2D previews on-board
 
 
 
@@ -120,4 +118,9 @@ DONE / NOTES
 
   - sparkfire (Some adaptations for strip length)
 
-  - spiral twirls 2D by ChrisNZ
+  - ChrisNZ
+    - Permission secured
+    - spiral twirls 2D
+    - sound - spectrum analyzer 1D/2D
+
+
