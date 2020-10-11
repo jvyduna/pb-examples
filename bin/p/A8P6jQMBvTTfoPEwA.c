@@ -1,1 +1,1 @@
-{"sliderTwistSpeed":0.189,"sliderInitialColor":0,"sliderArms":0,"sliderRotationSpeed":0.1782,"sliderColorSpeed":0.1313}
+{"sliderArms":1,"sliderColorSpeed":0.1844,"sliderInitialColor":0.1095,"sliderRotationSpeed":0.4859,"sliderTwistSpeed":0.2341}

@@ -1,33 +1,47 @@
 /*
   Lightning ZAP!
   
+  This pattern illustrates how you can create user interface controls that show
+  up in the Pixelblaze pattern list and code editor (on wider screens, look to
+  the right above the Vars Watch). Controls are created automatically when you
+  export functions that have names beginning with "hsvPicker", "rgbPicker", or
+  "slider". See further documentation below the code editor.
+  
   This pattern was for a Halloween installation of bifurcated strips that split
-  off to took like lightning bolts. While many examples show smooth wave
+  off to look like lightning bolts. While many examples show smooth wave
   functions, this example shows one way to work with bigger chunks of time.
   
   Strips: https://www.instagram.com/p/B4F-93EBNVV/
   Installed: https://www.instagram.com/p/B4TuvDSBXHl/
 */
 
-// Set up each bolt segment to be between 1/15th and 1/6th of the strip length
-boltMin = floor(pixelCount / 15)
-boltMax = ceil(pixelCount / 6)
-delayFactor = 15  // Determines the time between successive bolt segments
-resetDelayFactor = 1000 // Determines the pause between complete lightning bolts
-fade = 15  // How fast each lightning bolt section fades out
-
-pixels = array(pixelCount)
-x = 0
-timer = 0
-
+// Add a color picker control to make it easy to change the color of the bolts!
 // Set up variables to store the chosen bolt color
 var hue = 0, saturation = 0, value = 1
-// Add a color picker control to make it easy to change the color of the bolts!
 export function hsvPickerBoltColor(_h, _s, _v) {
   hue = _h
   saturation = _s
   value = _v
 }
+
+// Add a slider control to select the speed of the lightning bolts
+fade = 15  // How fast each lightning bolt section fades out
+delayFactor = 15  // Determines the time between successive bolt segments
+resetDelayFactor = 1000 // Determines the pause between complete lightning bolts
+// _v from the slider will be in 0..1
+export function sliderBoltSpeed(_v) {
+  fade = 2 + _v * 13 // fade will therefore be set to something between 2 and 15
+  delayFactor = 15 + (1 - _v) * 15
+  resetDelayFactor = 1000 + (1 - _v) * 2000
+}
+
+// Set up each bolt segment to be between 1/15th and 1/6th of the strip length
+boltMin = floor(pixelCount / 15)
+boltMax = ceil(pixelCount / 6)
+
+pixels = array(pixelCount)
+x = 0
+timer = 0
 
 export function beforeRender(delta) {
   // Most frames we are fading all pixels and counting down a timer

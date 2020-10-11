@@ -1,1 +1,1 @@
-{}
+{"sliderBoltSpeed":1,"hsvPickerBoltColor":[0.6527777777777778,0,1]}

@@ -2,10 +2,7 @@ TODO
 
 - Adapt community patterns for inclusion:
 
-  Currently in the repo, not yet normalized
-    - Ben's
-      - xorcery 2D / 3D
-        - record Youtube preview
+  Currently in the repo, not yet normalized      
     - zranger Jon 
       - permission secured / MIT
       - Midpoint displacement
@@ -15,9 +12,7 @@ TODO
   Not yet in repo
     - Roger Chang
       - Accelerometer test pattern
-    - Unknown author: Fireflies
 
-- Are UI sliders represented? Quick: add to lightning ZAP for speed.
 
 - Re-record Youtube 2D "previews" on 16x16 SK9822
   - Sectrum analyzer 2D has no YouTube demo but it's cool
@@ -95,11 +90,11 @@ DONE / NOTES
 
   - 3D patterns
     - cube fire 3D (Wizard)
-      - linked video
+      - linked video +
     - fast pulse 3d (Wizard)
-      - linked video
+      - linked video +
     - 3D Rotation / Spotlights
-      - linked video
+      - linked video + 
 
   - Scott Balay's pew pew pew
     - permission secured / MIT
@@ -120,7 +115,13 @@ DONE / NOTES
 
   - ChrisNZ
     - Permission secured
-    - spiral twirls 2D
+    - spiral twirls 2D + 1D/3D + YouTube output demo
+      - Fatal bug: atan(0,0) will reboot board; can get stuck
     - sound - spectrum analyzer 1D/2D
 
+  - xorcery 2D / 3D + YouTube output demo
+    - Note, this is now very similar to "block reflections" in 1D - that one could be eliminated to lighten the list (though it has more verbose comments that should then be moved into Xorcery)
 
+  - Fireflies
+
+  - UI sliders now represented: Speed in lightning ZAP (renamed "Example:")
