@@ -1,4 +1,6 @@
 /*
+ Block reflections
+ 
  Block reflections shows what's possible when you modulate a modulus.
  
  More specifically, the % operator in Pixelblaze is the remainder operation.
@@ -8,8 +10,10 @@
  This sign convention for `%` is as used in JS, most C, C#, Swift, Rust, but 
  unlike Python/Ruby, where the sign is that of the divisor.
  
- When running this pattern, looks for the ramps of hue and brightness value.
+ When running this pattern, look for the ramps of hue and brightness value,
  and notice a symmetry point around which the brightness ramps are reflected.
+ 
+ The pattern Xorcery 2D/3D is an extension of this in 2D/3D space.
 */
 
 export function beforeRender(delta) {
@@ -31,7 +35,7 @@ export function render(index) {
   h += (index - pixelCount / 2) / pixelCount * 
               (10 * triangle(t3) + 4 * sin(t4))
 
-  // Our dynamic dividend for the modulus (rwmainder) operation coming next.
+  // Our dynamic dividend for the modulus (remainder) operation coming next.
   // 0.3 -> 0.5 and back, a triangle wave that peaks when t1 == 0.5.
   m = 0.3 + 0.2 * triangle(t1)
   
@@ -55,7 +59,7 @@ export function render(index) {
   h %= m
   
   /*
-    The main ramps you can see in the outbut are ramps of both hue and 
+    The main ramps you can see in the output are ramps of both hue and 
     brightness. m and t1 can shift the 0..0.5 brightness higher, and even 
     "overdrive" back to low brightness spacers between blocks.
   */

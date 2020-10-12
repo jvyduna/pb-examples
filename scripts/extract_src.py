@@ -10,7 +10,6 @@ script_dir = os.path.dirname(__file__)
 indir = os.path.join(script_dir, "..", "epe")
 outdir = os.path.join(script_dir, "..", "src")
 
-epe_filename = "scrolling text marquee 2D.epe"
 for epe_filename in fnmatch.filter(os.listdir(indir), "*.epe"):
     print("Extracting source from " + epe_filename)
     with io.open(os.path.join(indir, epe_filename), 'r', 4096, 'utf-8-sig') as epe:

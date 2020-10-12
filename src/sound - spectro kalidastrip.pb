@@ -1,5 +1,5 @@
 /*
-  sound - spectro kalidastrip
+  Sound - spectro kalidastrip
 
   This pattern is designed to use the sensor expansion board, but falls back to
   simulated sound data if the sensor board isn't detected.
@@ -51,7 +51,7 @@ pixels = array(pixelCount)
   As described in the "sound - blink fade" pattern, you can add "export var" and
   inspect this to tune it. If pic[2] converges to 400 (the max) then the input
   is so soft that the PI controller has raised the sensitivity gain all the way
-  it can, and the patteren may still be dark as a result.
+  it can, and the pattern may still be dark as a result.
 */
 pic = makePIController(.2, .15, 50, 0, 400)
 
@@ -159,17 +159,17 @@ export function render(index) {
   pixels[index] = pixels[index] * fade + v
   v = pixels[index]
   
-  // Feedback to the PI contoller to normalize the strip's overall brightness
+  // Feedback to the PI controller to normalize the strip's overall brightness
   brightnessFeedback += clamp(v, 0, 1)
   hsv(h, s, v)
 }
 
-// doAt calls a function `fn` at a specified freqency, given ms elapsed `delta`
+// doAt calls a function `fn` at a specified frequency, given ms elapsed `delta`
 // For example, simulate sensor board data updates at 40Hz.
 var accumDelta = 0
 
 function doAt(hertz, delta, fn) {
-  accumDelta += delta // Accumulated miliseconds
+  accumDelta += delta // Accumulated milliseconds
   if (accumDelta <= 1000 / hertz) {
     return // Do nothing
   } else {
@@ -192,7 +192,7 @@ function simulateSound() {
   for (i = 0; i < 32; i++) frequencyData[i] = 0
   
   beat = (-4 * tM + 5) % 1 // 4 attacks per measure
-  beat *= .02 * pow(beat, 4)  // Scale magnitute and make concave-up
+  beat *= .02 * pow(beat, 4)  // Scale magnitude and make concave-up
   // Splay energy out, most energy at lowest frequency bins
   for (i = 0; i < 10; i++) frequencyData[i] += beat * (10 - i) / 10
 

@@ -12,7 +12,7 @@
   defining their specific LED placements in the mapper:
     
     1. A 8x8 matrix in a perfect grid, wired the common zigzag way
-    2. Individual pixels on a strand mounted in a trangle hexagon grid
+    2. Individual pixels on a strand mounted in a triangle hexagon grid
     3. Equal length strips wired as vertical columns on separate channels
          of the output expander board
   
@@ -70,9 +70,9 @@ export function render2D(index, x, y) {
 
 /*
   When there's no map defined, Pixelblaze will call render() instead of 
-  render2D() or render3D(), so it's nice to define a graceful degredation for 1D
-  strips. For many geometric patters, you'll want to define a projection down a
-  dimention. 
+  render2D() or render3D(), so it's nice to define a graceful degradation for 1D
+  strips. For many geometric patterns, you'll want to define a projection down a
+  dimension. 
 */
 export function render(index) {
   pct = index / pixelCount  // Transform index..pixelCount to 0..1

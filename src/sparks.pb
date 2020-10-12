@@ -24,7 +24,7 @@ friction = 1 / pixelCount
 /*
   The main sparks array holds the energy of each spark. The energy will
   determine how much force is accelerating the spark, as well as how much
-  the pixel at its current position is heated (and therefore how bright is is).
+  the pixel at its current position is heated (and therefore how bright it is).
 */
 sparks = array(numSparks)
 
@@ -89,7 +89,7 @@ export function beforeRender(delta) {
       Advance the position of each spark by the square of its energy (~force),
       proportional to how much time has passed. Using the square is optional,
       and produces a final effect more like the energy of the spark is also 
-      imparting a force on it (accellerating it). If you don't use the square,
+      imparting a force on it (accelerating it). If you don't use the square,
       the motion appears more like a puck slowing down across ice.
     */
     sparkX[i] += sparks[i] * sparks[i] * delta

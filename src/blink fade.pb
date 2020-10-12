@@ -1,4 +1,6 @@
 /*
+  Blink fade
+  
   Blink fade is a great pattern to get acquainted with arrays in Pixelblaze.
   
   An array is a numbered collection of values. In this pattern we use two

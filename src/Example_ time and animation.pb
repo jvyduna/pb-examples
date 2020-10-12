@@ -23,7 +23,7 @@ modes[6]  = (f, t) => (f + wave(wave(t))) % 1 // Warbly movemovent
 modes[7]  = (f, t) => square(triangle(wave(t)) + f, .5) // Bouncing
 modes[8]  = (f, t) => wave(f + t) * wave(f + t2) // Times with different intervals create interesting waveform interactions
 modes[9]  = (f, t) => wave(wave(f + t) + wave(f - t2) + f - t) // Wave textures
-modes[10] = (f, t) => wave(f + wave(wave(t) + f / 4)) // Stretchy efect
+modes[10] = (f, t) => wave(f + wave(wave(t) + f / 4)) // Stretchy effect
 modes[11] = (f, t) => wave((f - 2) * (1 + wave(t))) * wave(wave(t2) + f) // Zoomed and blended
 modes[12] = (f, t) => 2 * triangle(f + wave(t)) - wave(f * .75 + wave(t2)) // Kinetic
 modes[13] = (f, t) => abs(triangle(f - triangle(t2)) - wave(f * 2 + triangle(t))) // Glitch conveyer belt

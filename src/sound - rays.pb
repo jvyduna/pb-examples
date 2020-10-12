@@ -1,11 +1,11 @@
 /*
-  sound - rays
+  Sound - rays
 
   This pattern is designed to use the sensor expansion board, but falls back to
   simulated sound data if the sensor board isn't detected.
 
   The beginning of the strip will originate pixels with color based on the most
-  prevalent frequency in the sound, and brighness based on the magnitude. Those
+  prevalent frequency in the sound, and brightness based on the magnitude. Those
   rays of color will then travel down the strip.
 
   Please check out the "sound - blink fade" pattern for more verbose comments
@@ -68,7 +68,7 @@ export function beforeRender(delta) {
   /*
     The base color will be modified by time and strip position in render(), but
     its hue begins based on the most intense frequency detected. If you played a
-    swept tone bewtween 20 Hz and 5 KHz, it'd trace a rainbow. 
+    swept tone between 20 Hz and 5 KHz, it'd trace a rainbow. 
   */
   hues[pos] = maxFrequency / 5000
 
@@ -85,7 +85,7 @@ export function render(index) {
   h = hues[i]
   /*
     This rotates color by adding a component based on time and position.  
-    Comment this out to more clearly see the detected maximum frecuencies.
+    Comment this out to more clearly see the detected maximum frequencies.
     Adding `index / pixelCount / 4` adds a quarter of the hue wheel across the
     strip's entire length. Notice that since index is reversed, *adding* t1 back
     in has the effect of *slowing* the hue progression.

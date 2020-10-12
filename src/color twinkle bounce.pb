@@ -33,7 +33,7 @@ export function render(index) {
   h += time(.1)
   /*
     You might have noticed that timers are typically defined in the
-    beforeRender() function and therefore set between frames. Is it ineffecient
+    beforeRender() function and therefore set between frames. Is it inefficient
     to call time() in render()? Can time() progress between individual pixels'
     calls to render()? The answer is no to both. time() is memoized, meaning it
     returns a fast, consistent result for all calls within render() for a given
@@ -41,9 +41,9 @@ export function render(index) {
   */
 
   // Using the same period as the hue bounce, we'll set brightness `v`alues
-  // to zero to create space betweeen pulses.
+  // to zero to create space between pulses.
   v = (1 + sin(index / 2 + 5 * sin(t1))) / 2
   
-  v = v * v * v * v // Gamma correcion
+  v = v * v * v * v // Gamma correction
   hsv(h, 1, v)
 }

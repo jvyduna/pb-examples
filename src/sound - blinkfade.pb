@@ -1,5 +1,5 @@
 /*
-  sound - blink fade
+  Sound - blink fade
 
   This pattern is designed to use the sensor expansion board.
 
@@ -169,8 +169,8 @@ export function render(index) {
 
 
 /*
-  These functions are used if the sensor baord is not detected to simulate the
-  sound variables used in this pattern. This allows the pattern stil be lively 
+  These functions are used if the sensor board is not detected to simulate the
+  sound variables used in this pattern. This allows the pattern still be lively 
   in the sequencer when there's no sensor board connected.
   
   16th notes (sequencerSlot)       S                              S

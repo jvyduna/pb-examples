@@ -20,7 +20,7 @@ export function beforeRender(delta) {
   t2 = time(.13 / speed)   // y offset
   t3 = time(.085 / speed)  // z offset
 
-  // Oscillate the scale coeffecient of space between 0.25 and 0.75
+  // Oscillate the scale coefficient of space between 0.25 and 0.75
   scale = (.5 + wave(time(.1))) / 2
 }
 
@@ -41,7 +41,7 @@ export function render3D(index, x, y, z) {
 
   /*
     This looks like typical gamma correction here, but really it only serves to
-    increase the negative spcae between nearby spheres; after this the cores
+    increase the negative space between nearby spheres; after this the cores
     will all have v > 1 (e.g. center v == 10^3)
   */
   v = v * v * v  
@@ -57,7 +57,7 @@ export function render2D(index, x, y) {
 /*
   A common approach to creating 1D versions of 3D patterns is to render the line
   in 3D where y & z = 0. To translate pixel indices to x's 0..1 world 
-  coorinates, divide index by pixelCount to output a 'percent this pixel is into
+  coordinates, divide index by pixelCount to output a 'percent this pixel is into
   the strip', i.e. 0..1. Evaluating this aesthetically in 1D, it seems to look
   best scaled out so we multiply by 8 to plot a longer line from 3D space.
 */

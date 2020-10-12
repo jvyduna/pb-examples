@@ -22,7 +22,7 @@ export function render(index) {
   a = a * a
 
   // Notice this is a different wave with longer wavelength travelling the other
-  // direction; This is part of how you might see a "reflection" in thr output.
+  // direction; This is part of how you might see a "reflection" in the output.
   b = sin(index / pixelCount * PI6 - t2)
   c = triangle((index / pixelCount * 3 + sin(t3)) / 2)
 

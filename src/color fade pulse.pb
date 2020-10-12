@@ -25,7 +25,7 @@ export function render(index) {
   v = v * v * v * v
     
   // Every few pulses will be whiter (low saturation). Each pulse will very 
-  // slowly alternate between a whiteish pulse and deeper saturated hues.
+  // slowly alternate between a whitish pulse and deeper saturated hues.
   s = wave(index / pixelCount / 2 + t3)
   
   hsv(h, s, v)

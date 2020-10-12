@@ -1,18 +1,18 @@
 /*
-  Sound - Spectrum Analyser 1D/2D
+  Sound - spectrum analyser 1D/2D
   
   Output demo: https://youtu.be/sZIZiAt9l4o
   (You can connect multiple Pixelblaze to a single sensor expansion board.)
   
-  This pattern requires the sensor expansion board and a 2D LED matrix.
-  It displays a spectrum analyser based on the frequency data from the
-  microphone. This is a real time graph where the low frequencies are plotted 
-  on the left hand side, and higher frequencies are on the right.
+  This pattern uses the sensor expansion board and a 2D LED matrix. It displays
+  a spectrum analyser based on the frequency data from the microphone. This is a
+  real time graph where the low frequencies are plotted on the left hand side,
+  and higher frequencies are on the right.
   
   This pattern is meant to be displayed on an LED matrix or other 2D surface 
   defined in the Mapper tab. Using the computer graphics convention, (x, y) = 
-  (0, 0) is the top left (positive y advances downwards.) You will also need to
-  set the 'width' variable below to match the width of your matrix.
+  (0, 0) is the top left (positive y advances downwards). You will need to set
+  the 'width' variable below to match the width of your matrix.
   
   There's also a 1D fallback and a spectrum simulator used when the sensor board
   is not detected.

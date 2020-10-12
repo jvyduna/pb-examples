@@ -43,11 +43,11 @@ export function render(index) {
 
   /*
     A boolean comparison such as (a > b) can be cast to 0 or 1 and used with
-    other artithmatic expressions.
+    other math expressions.
 
     The brightness value is 0.5 if s2 is larger. If s1 is larger, it's 1.5 
     (which is clamped down to 1 by hsv()). This creates another aspect of the
-    "glitches". To see this part clarly, try changing 0.5 to 0.
+    "glitches". To see this part clearly, try changing 0.5 to 0.
   */
 
   v = (s1 > s2) + .5

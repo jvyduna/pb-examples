@@ -6,8 +6,8 @@
   It turns out that when composing computer graphics, there's a persistent need
   for randomness if we want to make things appear more "organic". Generating any
   individual random number is easy using `random()`. A sequence of purely random
-  vales is white noise, which hops all around. In computer graphics, we commonly
-  have a need for a continuous noise functions that can be procedurally
+  values is white noise, which hops all around. In computer graphics, we 
+  commonly have a need for a continuous noise functions that can be procedurally
   generated, known as value noise or gradient noise. If you think of the
   continuous but random set of heights encountered while transiting a mountain
   range, that would be analogous to gradient noise, and could be represented as

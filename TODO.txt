@@ -100,6 +100,7 @@ DONE / NOTES
     - Permission secured
     - spiral twirls 2D + 1D/3D + YouTube output demo
       - Fatal bug: atan(0,0) will reboot board; can get stuck
+      - Safety shim added
     - sound - spectrum analyzer 1D/2D
 
   - Xorcery 2D / 3D + YouTube output demo
@@ -120,3 +121,6 @@ DONE / NOTES
   - color temperature
   - midpoint displacement noise
   - multisegment
+
+- Spell checked all patterns. Whoa I'm bad.
+

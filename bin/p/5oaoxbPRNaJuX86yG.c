@@ -1,1 +1,1 @@
-{"hsvPickerColor":[0,0.7587939698492463,0.920420603709178],"sliderFrequency":0.7044}
+{"hsvPickerColor":[0,0,1],"sliderFrequency":0.4331}

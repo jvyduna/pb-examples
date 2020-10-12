@@ -5,7 +5,7 @@
   
   If you understood the comments on that one, this is a straightforward
   adaptation to spawn sparks at the center of the strip. The comments here focus
-  on that adaptaton.
+  on that adaptation.
 */
 
 numSparks = floor(pixelCount / 6)

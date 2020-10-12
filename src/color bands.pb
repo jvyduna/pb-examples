@@ -1,4 +1,6 @@
 /*
+  Color bands
+  
   Color bands has a chill vibe that comes from applying slower phase shifts to
   shorter wavelengths.
   
@@ -22,7 +24,7 @@ export function render(index) {
   // (saturated) and sharply dip to 0 to make white areas.
   s = 1 - s * s * s * s
   
-  // Create the slowly moving dark reqions
+  // Create the slowly moving dark regions
   v = wave(index / 2 + t2) * wave(index / 5 - t2) + wave(index / 7 + t2)
   
   v = v * v * v * v

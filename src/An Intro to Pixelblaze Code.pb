@@ -50,7 +50,7 @@ export function render(index) {
 
 /*
   Great! From here on out, we're going to keep learning by commenting out
-  entre examples and 'uncommenting' the next example. 
+  entire examples and 'uncommenting' the next example. 
 
   This code editor is called ACE and it has some useful shortcuts you can find
   here: https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts
@@ -85,7 +85,7 @@ export function render(index) {
   
   The word `export` is put before any functions or variables that some code
   outside of your pattern will need to access. In this case, the overall
-  Pixelbaze system code needs to be able to run your render() function
+  Pixelblaze system code needs to be able to run your render() function
   and pass in all the pixels' indices.
   
   If we want to turn a pixel on, we need to have a line that sets its color.
@@ -345,7 +345,7 @@ export function render(index) {
 //   // integer from zero to the total number of pixels we've configured.
 //   onPixel = floor(t1 * pixelCount) 
 //
-//   v = 0 // Start by asuming the pixel is off
+//   v = 0 // Start by assuming the pixel is off
 //   // Turn it on only if the current pixel's index is equal to `onPixel`
 //   if (index == onPixel) v = 1
 //   hsv(0.02, 1, v)
@@ -368,7 +368,7 @@ export function render(index) {
 // export function render(index) {
 //   pulsePosition = t1 * pixelCount // In units of pixels
 //   distanceFromPulse = abs(pulsePosition - index) // Still in pixels
-//   // We need something that's high when we're colse to the pulse, 
+//   // We need something that's high when we're close to the pulse, 
 //   // and low or negative when we're far from the t1 pulse position.
 //   halfWidth = 5 // pixels
 //   // When proximityToPulse == 5, we're at the pulse, 1 is dim, >= 0 is off
@@ -422,7 +422,7 @@ export function render(index) {
   
     void loop() { delay(1000); toggleLED(); }
   
-  Writing nonblocking code is just a different set of techniques. You'll pick
+  Writing non-blocking code is just a different set of techniques. You'll pick
   it up, don't worry.
   
   There's usually several ways to do something, and the method above was

@@ -4,6 +4,8 @@
   This pattern plays several patterns through 1D, 2D, and 3D coordinate space to
   help you debug the pixel maps you develop for your physical installation in
   the Mapper tab.
+    
+  Output demo: https://youtu.be/yasYcLyJopI
   
   This pattern builds on concepts developed by Roger Cheng:
     https://newscrewdriver.com
@@ -63,7 +65,7 @@ export function render(index) {
 
 
 /*
-  Sweep 3 orthoginal planes through 3D space. The color corresponds to the 
+  Sweep 3 orthogonal planes through 3D space. The color corresponds to the 
   traditional color of the axis that the plan is normal to. 
 
   Derived from Roger Cheng's "RGB-XYZ 3D Sweep"
@@ -99,12 +101,12 @@ function axesAndRadius(index, x, y, z) {
   // v == 1 right at the shell radius
   v = near(sphereRadius, distance)
   
-  // Color this part of the shell acording to which axis it's closest to
+  // Color this part of the shell according to which axis it's closest to
   if (v > 0.01) rgb(v * x / distance, v * y / distance, v * z / distance)
 }
 
 
-// This is similar to the ranbow animation simulated in the mapper tab
+// This is similar to the rainbow animation simulated in the mapper tab
 function mapperAnim(index, x, y, z) {
   h = index / pixelCount + tIndexChase
   v = 0.2 + 0.7 * (near(index / pixelCount, tIndexChase) > 0.5)
@@ -136,7 +138,7 @@ function octants(index, x, y, z) {
   installation at 30FPS, only 180 of the total pixels will light.
 */
 function chaseIndex(index) {
-  longTail = false  // Chose wehther to render a single pixel or a faded tail
+  longTail = false  // Choose whether to render a single pixel or a faded tail
   
   if (longTail) {
     v = near(index / pixelCount, tIndexChase)

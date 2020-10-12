@@ -21,7 +21,7 @@
 
   White consumes the most power, and some people size their power supplies for a
   fraction of maximum. To limit current consumption, it defaults to coloring
-  every 10th pixel, but allows up to 100% of pixles via a UI control named "Fill 
+  every 10th pixel, but allows up to 100% of pixels via a UI control named "Fill 
   $ Be $ Careful $". You can also limit max current consumption with the global
   brightness slider in the top bar, or the Limit Brightness setting in Settings.
 

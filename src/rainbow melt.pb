@@ -2,7 +2,7 @@
   Rainbow melt
 
   This is derived from the "rainbow fonts" pattern, but adds dark regions 
-  between colors to create a more disctinct melting effect.
+  between colors to create a more distinct melting effect.
 
   It also doesn't use the shifting offset, so notice the sources don't move.
 */

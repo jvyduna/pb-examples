@@ -8,7 +8,7 @@
 
     v += random(1) > 0.01
 
-  Adding randomness to patterns can be a long and satifying quest.
+  Adding randomness to patterns can be a long and satisfying quest.
 */
 
 export function render(index) {

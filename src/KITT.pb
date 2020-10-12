@@ -2,9 +2,10 @@
   Knight Rider: A car named KITT gains sentience and fights critme and all that 
   good stuff.
   
-  Want to learn how to code patterns like this? 
-  This pattern has a YouTube video walkthrough:
-  https://www.youtube.com/watch?v=3ugNIZ96UK4
+  Want to learn how to code patterns like this? This pattern has a YouTube
+  video walkthrough:
+  
+    https://www.youtube.com/watch?v=3ugNIZ96UK4
 */
 
 leader = 0

@@ -19,7 +19,7 @@ export function beforeRender(delta) {
   t1 = time(.1) // Time it takes to melt = 0.1 * 65.536s
   
   // Speed and scale of how the sources and sinks of color oscillate in space.
-  // Set this to zero to easilly visualize the fonts.
+  // Set this to zero to easily visualize the fonts.
   offset = sin(time(.2) * PI2) * pixelCount / 10
 }
 

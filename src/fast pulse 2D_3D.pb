@@ -1,5 +1,5 @@
 /*
-  Fast pulse 3D
+  Fast pulse 2D/3D
   
   3D example: https://youtu.be/EGUTLHb98wM
   
@@ -65,7 +65,7 @@ export function render2D(index, x, y) {
 
 export function render(index) {
   // The core of the oscillation is a triangle wave, bouncing across two total
-  // strip lenghts. The 1D version removes the rotation element.
+  // strip lengths. The 1D version removes the rotation element.
   v = triangle(2 * wave(t1) + index / pixelCount)
   
   // Aggressive gamma correction looks good, reduces the pulse width, and makes

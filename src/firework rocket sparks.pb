@@ -1,4 +1,6 @@
 /*
+  Firework rocket sparks
+  
   In this pattern we'll learn a technique to send an object across the strip.
   
   Our goal is to have a fiery rocket (oranges and reds) followed by a sparkling
@@ -6,8 +8,8 @@
   
   You'll learn some convenient tricks for animating things in Pixelblaze. You 
   might be thinking, "OK, I'll store a position for the head of the rocket. 
-  The pixel should be red if it's a little behiind that, then some sparks, 
-  then dark. Then I'll advance that positon between frames." While you could 
+  The pixel should be red if it's a little behind that, then some sparks, 
+  then dark. Then I'll advance that position between frames." While you could 
   build it that way, this pattern helps you start thinking in terms of,
   "Everything's a travelling wave or derivative of one."
 */
@@ -36,7 +38,7 @@ export function render(index) {
   isSpark = canSpark && random(1) > 0.95
   
   // To make a fiery rocket, set up a second square wave that will be 5% of the 
-  // strip length, and lead the sparks secion by 5% of the strip length.
+  // strip length, and lead the sparks section by 5% of the strip length.
   isFire = square(index / pixelCount + t1 + 0.05, 0.05)
   
   /*

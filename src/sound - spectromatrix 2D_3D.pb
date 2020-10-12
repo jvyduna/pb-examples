@@ -1,5 +1,5 @@
 /*
-  sound - spectromatrix
+  Sound - spectromatrix 2D/3D
 
   This pattern is designed to use the sensor expansion board, but falls back to
   simulated sound data if the sensor board isn't detected.
@@ -135,7 +135,7 @@ export function render(index) {
   render2D(index, x, y)
 }
 
-// doAt calls a function `fn` at a specified freqency, given ms elapsed `delta`
+// doAt calls a function `fn` at a specified frequency, given ms elapsed `delta`
 // For example, simulate sensor board data updates at 40Hz.
 var accumDelta = 0
 

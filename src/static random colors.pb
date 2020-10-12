@@ -7,9 +7,9 @@
     var a = array(n)
     for(i = 0; i < n; i++) a[i] = random(1)
   
-  They would be a different sequence of random values each time you resarted the
-  pattern. But what if you need to be able to access the same sequence of random
-  numbers each time you run your program? You need a pseudorandom number
+  They would be a different sequence of random values each time you restarted
+  the pattern. But what if you need to be able to access the same sequence of
+  random numbers each time you run your program? You need a pseudorandom number
   generator (PRNG) that accepts a seed. The same random sequence is repeatably
   generated when the PRNG is given a particular seed. 
 
@@ -50,16 +50,23 @@ export function beforeRender(delta) {
 export function render(index) {
   h = pseudorandomFraction()
 
-  // s is a different random 0..1 value from h, but yet oddly completely
-  // repeatably random while still dependant on the fact that h was just emitted
-  // prior ;) John 
+  /*
+    s will be a different random 0..1 value from h, and is not correlated with
+    the prior output, but it is dependent on the state of the shift register
+    that just generated h. Each result from pseudorandomFraction() is random,
+    yet dependent on the seed and all prior states of the shift register.
+
+    Put another way, you'll see there are three calls to pseudorandomFraction(),
+    so each one is consuming a value from the deterministic random sequence,
+    then on the next render() they consume the next three values, etc.
+  */ 
   s = pseudorandomFraction()
 
   // Adjust saturation to favor vibrant colors, but still allow whites/pastels
   s = 1 - s * s * s 
 
-  // Each pixel is faded in and out on a random phase. To make it truly static, 
-  // just set v to be 1.
+  // Each pixel is faded in and out with a random phase. To make it truly
+  // static, set v to be 1.
   v = wave(t1 + pseudorandomFraction())
   
   hsv(h, s, v * v)

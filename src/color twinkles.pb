@@ -5,7 +5,7 @@
   without the `pixelCount`. In other words, it depends on the 0-based pixel 
   number, instead of `index / pixelCount`, the "percentage into our overall 
   strip length." Thinking in these terms allows us to start from a design goal
-  of making adjascent pixels different, instead of depending on the total
+  of making adjacent pixels different, instead of depending on the total
   number of pixels we have.
 */
 
@@ -30,7 +30,7 @@ export function render(index) {
   /*
     The following ternary operator translates to, "If v is greater than 0.1, let
     it stand. If it's a low intensity, say, below 0.1, squelch it's brightness 
-    value to zero." It's equvalent to:
+    value to zero." It's equivalent to:
     
       if (v <= .1) v = 0
 

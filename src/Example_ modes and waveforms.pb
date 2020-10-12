@@ -43,7 +43,7 @@ export function hsvPickerColor(_h, _s, _v) { h = _h; s = _s; v = _v }
 
 /*
   To create a UI slider control in the Pixelblaze IDE, write an event handler 
-  that starts with "slider". All UI handlers in a parrtern are called when 
+  that starts with "slider". All UI handlers in a pattern are called when 
   *any* UI control changes. The value passed into this function will be between
   0 and 1. Sliders remember their position.
 */

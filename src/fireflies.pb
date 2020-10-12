@@ -16,7 +16,7 @@ sparkSaturation = 1  // Set the saturation for each spark (0 = white)
 numSparks = 1 + (pixelCount / 10)  // Scale number of sparks based on # LEDs
 decay = .99          // Decay their energy/speed. Use .999 for slower
 maxSpeed = .4        // The maximum initial speed of any spark / firefly
-newThreshhold = .01  // Recycly any spark under this energy
+newThreshhold = .01  // Recycle any spark under this energy
 
 sparks = array(numSparks)
 sparkX = array(numSparks)
