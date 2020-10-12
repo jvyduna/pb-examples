@@ -1,1 +1,1 @@
-{}
+{"sliderColorTemperature":0,"slider_fill_$_be_$_careful_$":0}

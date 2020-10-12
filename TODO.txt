@@ -1,54 +1,37 @@
 TODO
 
 - Adapt community patterns for inclusion:
-
-  Currently in the repo, not yet normalized      
-    - zranger Jon 
-      - permission secured / MIT
-      - Midpoint displacement
-      - Multisegment
-      - Color temperature
-
-  Not yet in repo
-    - Roger Chang
-      - Accelerometer test pattern
-
-
-- Re-record Youtube 2D "previews" on 16x16 SK9822
-  - Sectrum analyzer 2D has no YouTube demo but it's cool
+  - Roger Chang
+    - Accelerometer test pattern
 
 - Move media to Ben's youtube account if time/energy
   - Might be moot bacause possibly 2D previews on-board
 
-
+- Add new patterns not yet written
+  - Transform 0..1 hue into 2 color pallette
+    - https://forum.electromage.com/t/pattern-request-two-moving-colors/414
+  - "A collection of useful techinques"
 
 
 DONE / NOTES
 
 - Add patterns in the check batch emailed to Ben 7/13/20
 
-
 - Add the rewritten patterns for 2D code emailed earlier
   - matrix 2D pulse
   - matrix 2D honeycomb
 
-
 - Make the edits suggested in Ben's 7/19/20 feedback on the initial batch
   - blink fade array note
-
   - modes and waveforms: "I think that using an hsv picker for hue and a slider for saturation is kind of a UX weirdness. Demoing controls might be better done elsewhere, but I can see some value in merging an hsv picker with the demo textures."
     - Removed UI control demo in Examples
     - ToDo: Create a separate, intentional "Example: UI controls"
-
   - An intro: "Keyboard shortcuts url for ACE
       https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts"
-
   - firework rocket sparks is less of a learning odyssey
-
 
 - Check and remove 2nd version of rainbow fonts.
   - Picked the version I thought was clearer. Previous versions had v set to 0.2, which muted the preview image. If this was intentional because its intensity dominates the pattern list, please put it back in.
-
 
 - Update and lightly comment the rest of the default patterns
   - block reflections (explores remainder / modulus)
@@ -119,9 +102,21 @@ DONE / NOTES
       - Fatal bug: atan(0,0) will reboot board; can get stuck
     - sound - spectrum analyzer 1D/2D
 
-  - xorcery 2D / 3D + YouTube output demo
+  - Xorcery 2D / 3D + YouTube output demo
     - Note, this is now very similar to "block reflections" in 1D - that one could be eliminated to lighten the list (though it has more verbose comments that should then be moved into Xorcery)
 
   - Fireflies
 
   - UI sliders now represented: Speed in lightning ZAP (renamed "Example:")
+
+- "matrix 2D honeycomb" renamed "honeycomb 2D/3D" and given 1D & 3D renderers + Youtube demo
+
+- "matrix 2D pulse" renamed "pulse 2D" and given 1D renderer + Youtube demo
+
+- Re-recorded Youtube 1D/2D/3D "preview" for "sound - spectrum analyser 1D/2D"
+
+- zranger1 (Jon)
+  - permission secured / MIT
+  - color temperature
+  - midpoint displacement noise
+  - multisegment

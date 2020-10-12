@@ -1,1 +1,1 @@
-{}
+{"sliderPaletteWidth":0.3355,"sliderRoughness":0.9767,"slidermapLifetime":0.9985,"sliderSpeed":0.5112,"sliderMaxLevel":1,"sliderPaletteOffset":0}

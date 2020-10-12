@@ -1,8 +1,10 @@
 /*
-  This pattern is meant to be displayed on an LED matrix or other 2D surface 
-  defined in the Mapper tab.
+  Pulse 2D
+
+  This pattern is meant to be displayed on an LED matrix or other 2D surface
+  defined in the Mapper tab. There is also a 1D version defined.
   
-  Output demo: https://youtu.be/X1-hTY-le5s
+  Output demo: https://youtu.be/hZT4z3OQEvg
   
   The mapper allows us to share patterns that work in 2D or 3D space without
   the pattern code being dependent on how the LEDs were wired or placed in 
@@ -60,4 +62,17 @@ export function render2D(index, x, y) {
   v = v * v * v / 2 
 
   hsv(h, 1, v)
+}
+
+/*
+  When there's no map defined, Pixelblaze will call render() instead of 
+  render2D() or render3D(), so it's nice to define a graceful degredation for 1D
+  strips. For many geometric patters, you'll want to define a projection down a
+  dimention. 
+*/
+export function render(index) {
+  pct = index / pixelCount  // Transform index..pixelCount to 0..1
+  // render2D(index, pct, pct)  // Render the diagonal of a matrix
+  // render2D(index, pct, 0)    // Render the top row of a matrix
+  render2D(index, 8 * pct, 0)   // Render 8 top rows worth to make it denser
 }
