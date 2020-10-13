@@ -96,7 +96,7 @@ export function beforeRender(delta) {
     
     // If a spark's position exceeds the end of the strip, reset its position
     // and energy to 0. It'll be reinitialized in the next beforeRender()
-    if (sparkX[i] >= pixelCount) {
+    if (sparkX[i] >= pixelCount || sparkX[i] < 0) {
       sparkX[i] = 0
       sparks[i] = 0
     }
