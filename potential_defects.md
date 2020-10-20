@@ -1,3 +1,0 @@
-# Potential Defects
-
-1. 
