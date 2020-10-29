@@ -1,0 +1,1 @@
+{"hsvPickerColor":[0.755514705882353,1,1],"sliderSharpness":0.2219,"sliderLocation":0.504}
