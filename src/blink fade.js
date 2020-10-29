@@ -41,29 +41,41 @@ values = array(pixelCount)
 hues = array(pixelCount)
 
 
+export var colorShiftSpeed = 4.6
+export var fade = .005
+
+
+export function sliderColorSpeed(v) {
+  colorShiftSpeed = .5 + 20 * (1-v) //.5 to 20.5 seconds
+}
+
+export function sliderFadeSpeed(v) {
+  fade = .0001 + v * .015 // .0001 to 0.0151 or about to 1.5s to 100s
+}
+
 // Called between frames
 export function beforeRender(delta) {
   // Loop through every pixel
-	for (i = 0; i < pixelCount; i++) {
-	  // `delta` is how many ms have elapsed since the last beforeRender().
-	  // Therefore at 200 Frames Per Second (FPS), delta = 5, and each pixel's 
-	  // 0..1 value would be reduced by 0.0025 each frame.
-  	values[i] -= .005 * delta * .1
-  	
-  	// If this pixel is now full faded fully off
-  	if (values[i] <= 0) {
-  	  values[i] = random(1) // Bump it back up to a random number 0..1
-  	  
-  	  /*
-  	    Set the new color to be the sum of two components: 
-  	      1) A timer that sawtooths from 0 to 1 every 4.6 seconds
-  	      2) A 0.2 boost for the pixels at the center of the strip 
-  	    If you're thinking, "Wait, aren't hue values between 0 and 1? This goes
-  	    from 0 to 1.2," just know that hsv() 'wraps' hues for us. 1.1 => 0.1
+  for (i = 0; i < pixelCount; i++) {
+    // `delta` is how many ms have elapsed since the last beforeRender().
+    // Therefore at 200 Frames Per Second (FPS), delta = 5, and each pixel's 
+    // 0..1 value would be reduced by 0.0025 each frame.
+    values[i] -= fade * delta * .1
+    
+    // If this pixel is now full faded fully off
+    if (values[i] <= 0) {
+      values[i] = random(1) // Bump it back up to a random number 0..1
+      
+      /*
+        Set the new color to be the sum of two components: 
+          1) A timer that sawtooths from 0 to 1 every 4.6 seconds
+          2) A 0.2 boost for the pixels at the center of the strip 
+        If you're thinking, "Wait, aren't hue values between 0 and 1? This goes
+        from 0 to 1.2," just know that hsv() 'wraps' hues for us. 1.1 => 0.1
       */
-  	  hues[i] = time(4.6 / 65.536) + 0.2 * triangle(i / pixelCount)
-  	}
-	}
+      hues[i] = time(colorShiftSpeed / 65.536) + 0.2 * triangle(i / pixelCount)
+    }
+  }
 }
 
 /*
@@ -75,5 +87,5 @@ export function render(index) {
   h = hues[index]    // Retrieve the hue for this pixel
   v = values[index]  // Retrieve the brightness value for this pixel
   v = v * v          // Gamma scaling: v is in 0..1 so this makes small v smaller 
-	hsv(h, 1, v)       // Saturation is 1 -- no white is mixed in
+  hsv(h, 1, v)       // Saturation is 1 -- no white is mixed in
 }

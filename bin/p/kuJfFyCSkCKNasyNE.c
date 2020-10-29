@@ -1,1 +1,1 @@
-{}
+{"sliderColorSpeed":0.7987,"sliderFadeSpeed":0.3325}
