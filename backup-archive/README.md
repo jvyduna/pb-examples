@@ -1,5 +1,3 @@
-README.md
-
 # Backup Archive of the Stock v3 Patterns
 
 Upload the file in this directory to overwrite a Pixelblaze's entire pattern library back to the stock set of patterns it ships with.
